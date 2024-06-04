@@ -23,7 +23,8 @@ def lookup(name: str) -> str:
         model_name ="gpt-3.5-turbo",
     )
 
-    template = """given the name {name_of_person} I want you to find a link to their Twitter profile page, and extract from their twitter handle from it. Your final answer should only contain the person's username"""
+    template = """given the name {name_of_person} I want you to find a link to their Twitter profile page, 
+    and extract from their twitter handle from it. Your final answer should only contain the person's username"""
 
     prompt_template = PromptTemplate(
         template=template,
